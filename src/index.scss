@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #E7F6FF;
+}
+
+
+// .card {
+//   width: 210px;
+//   height: 260px;
+// }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card__image {
+  width: 130px;
+  height: auto;
+}
+
+.card {
+  // cursor: pointer;
+  transition: box-shadow .2s ease-in-out, transform .2s ease-in-out;
+  &:hover {
+    box-shadow: 0px 20px 35px rgba(0, 0, 0, .06);
+    transform: scale(1.05);
+    // transform: translateY(-5px);
+  }
+}
+
+.cart-modal {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.cart {
+  background-color: #fff;
+}
+
+.cart-item:not(.cart-item:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.cart-border-block {
+  border-bottom: dotted 1px rgba(0, 0, 0, .5);
+  flex-grow: 1;
+  padding: 0 5px;
+}
+
+.cart-footer {
+
+}
+
+
+
+
+
