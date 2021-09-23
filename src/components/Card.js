@@ -1,12 +1,12 @@
-function Card() {
+function Card(props) {
   return (
     <article className="card  rounded-3xl p-8 shadow relative">
       <img className="card-image" src="/images/sneaker.png" alt="sneaker" />
-      <p className="text-sm mb-2">Мужские Кроссовки Nike Blazer Mid Suede</p>
+      <p className="text-sm mb-2">{props.name}</p>
       <div className="flex justify-between">
         <div className="flex flex-col mb-2 text-sm">
           <span className="uppercase text-gray-400 text-xs">Цена:</span>
-          <span className="font-bold">12 999 руб.</span>
+          <span className="font-bold">{props.price}</span>
         </div>
         <button className="">
           <img src="/images/add-to-cart-button.svg" alt="" />

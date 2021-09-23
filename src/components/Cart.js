@@ -1,6 +1,6 @@
 function Cart() {
   return (
-    <div className="cart-modal fixed w-full h-full z-10 left-0 top-0">
+    <div className="cart-modal hidden fixed w-full h-full z-10 left-0 top-0">
       <div className="cart-content w-1/4 min-h-full fixed right-0 p-7 bg-white flex flex-col">
         <h2 className="text-2xl font-bold mb-6">Корзина</h2>
         <button className="cart-close-btn absolute top-9 right-12 cursor-pointer">

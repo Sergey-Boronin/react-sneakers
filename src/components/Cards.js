@@ -1,16 +1,14 @@
 import Card from './Card'
+import initData from "./initialCards"
 
-function Cards() {
+function Cards(props) {
     return (
         <section className="cards pt-10">
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+        {initData.map(item => 
+        <Card 
+        name={item.name} 
+        price={item.price}/>
+        )}
         </section>
     )
 }
